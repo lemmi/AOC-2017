@@ -1,0 +1,7 @@
+[package]
+name = "aoc"
+version = "0.1.0"
+authors = ["lemmi <lemmi@nerd2nerd.org>"]
+publish = false
+
+[dependencies]
