@@ -143,10 +143,8 @@ pub mod graph {
         pub fn num_groups(&self) -> u32 {
             let mut t = Implicit::<T>{edges: self.edges.clone()};
             let mut n = 0u32;
-            let mut l = 0usize;
             while let Some(seed) = t.get_any() {
                 let g = t.group(seed);
-                l += g.len();
                 for node in g {
                     t.edges.remove(&node);
                 }
